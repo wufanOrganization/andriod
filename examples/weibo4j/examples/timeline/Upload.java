@@ -21,6 +21,9 @@ public class Upload {
 				//Add comment
 				String s1 = java.net.URLEncoder.encode(args[1], "utf-8");
 				String s5 = java.net.URLEncoder.encode(args[1], "utf-8");
+				String s2 = java.net.URLEncoder.encode(args[1], "utf-8");
+				String s3 = java.net.URLEncoder.encode(args[1], "utf-8");
+				String s4 = java.net.URLEncoder.encode(args[1], "utf-8");
 				Timeline tm = new Timeline(access_token);
 				Status status = tm.uploadStatus(s, pic);
 
