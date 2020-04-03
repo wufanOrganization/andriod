@@ -18,6 +18,9 @@ public class Upload {
 				ImageItem pic = new ImageItem("pic", content);
 				String s = java.net.URLEncoder.encode(args[1], "utf-8");
 				String access_token = args[0];
+				//Add comment
+				String s1 = java.net.URLEncoder.encode(args[1], "utf-8");
+				
 				Timeline tm = new Timeline(access_token);
 				Status status = tm.uploadStatus(s, pic);
 
